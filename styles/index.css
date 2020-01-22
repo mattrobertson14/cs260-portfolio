@@ -28,3 +28,87 @@ body, html {
   left: 0;
   bottom: 10px;
 }
+
+.header-img {
+  height: 500px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, .7)), url('/photos/developer-img.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: rgba(255,255,255,.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-img h1 {
+  font-size: 64px;
+  color: white;
+}
+
+h3 {
+  text-align: center;
+  font-size: 28px;
+  position: relative;
+  margin-bottom: 0px;
+}
+
+.divider {
+  display: block;
+  width: 32px;
+  height: 3px;
+  background-color: rgba(0, 0, 0, .4);
+  margin: 24px auto;
+}
+
+.projects {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-link {
+  height: 100px;
+  width: 100px;
+}
+
+.projects a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-decoration: none;
+  color: black;
+  width: 100px;
+}
+
+.projects a p {
+  text-align: center;
+}
+
+#react {
+  background: url('/photos/react-icon.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#home-asst {
+  background: url('/photos/download.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#react-native {
+  background: url('/photos/react-native.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content {
+  width: 60%;
+  margin: 0px auto;
+}
