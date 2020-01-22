@@ -19,6 +19,31 @@ body, html {
   padding: 20px 12px;
 }
 
+.menu-option::after {
+  content: " ";
+  position: absolute;
+  background: rgba(255,255,255,.7);
+  height: 3px;
+  width: 80%;
+  left: 0;
+  bottom: 10px;
+  margin-left: 10%;
+  background: transparent;
+  transition-property: background;
+  transition-duration: .4s;
+}
+
+.menu-option:hover::after {
+  content: " ";
+  position: absolute;
+  background: rgba(255,255,255,.7);
+  height: 3px;
+  width: 80%;
+  left: 0;
+  bottom: 10px;
+  margin-left: 10%;
+}
+
 .menu-option.active::after {
   content: " ";
   position: absolute;
@@ -27,6 +52,7 @@ body, html {
   width: 100%;
   left: 0;
   bottom: 10px;
+  margin-left: 0px;
 }
 
 .header-img {
@@ -81,6 +107,17 @@ h3 {
   text-decoration: none;
   color: black;
   width: 100px;
+  padding: 20px 40px;
+  border-radius: 4px;
+  transition-property: box-shadow, transform;
+  transition-duration: .5s;
+  box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.projects a:hover {
+  background: white;
+  box-shadow: 0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12);
+  transform: scale(10%);
 }
 
 .projects a p {
