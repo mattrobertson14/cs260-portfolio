@@ -37,3 +37,37 @@ hr {
 .second-box img {
   width: 200px;
 }
+
+@media only screen and (max-width: 600px) {
+  .menu-option {
+    font-size: 13px;
+  }
+
+  .main-content {
+    width: 100%;
+  }
+
+  h1 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .first-box, .second-box {
+    flex-wrap: wrap;
+  }
+
+  .first-box p {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .second-box {
+    margin-top: 0px;
+  }
+
+  .second-box img {
+    margin-top: 20px;
+  }
+}
